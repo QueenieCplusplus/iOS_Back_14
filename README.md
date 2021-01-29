@@ -1,7 +1,7 @@
 # iOS_Back_14
 LifeCycle of iOS app
 
-* Life Cycle
+* App's Life Cycle
 
          import UIKit
 
@@ -80,6 +80,7 @@ LifeCycle of iOS app
 
       }
 
+
 * Download App
 一旦 app 下載進入手機設備中的磁碟內時，App 的生命週期就開始了，請詳 AppDelegate。
 而通常本地端的推播功能就是設計於此環節，能讓使用者在沒有網路的情況下，能接受 app 定時設計好的推送訊息。
@@ -97,5 +98,83 @@ LifeCycle of iOS app
 * Lock Screen
 使用者因為一定時間內沒有與手機互動，系統為保安全，便會鎖定螢幕，此階段與按下 Home 鍵的執行方式一樣。
 
+* View's Life Cycle
+
+                    //
+                  //  ViewController.swift
+                  //  KatesBackgroundRunner
+                  //
+                  //  Created by KatesAndroid on 2021/1/29 PM 8
+                  //
+                  import UIKit
+
+                  class ViewController: UIViewController {
+
+                      //override var viewIfLoaded: UIView?
+
+                      //override var isViewLoaded: Bool
 
 
+                      // ------ 載入畫面前 ------------------
+
+                      override func loadViewIfNeeded() {
+                          <#code#>
+                      }
+
+                      override func loadView() {
+                          <#code#>
+                      }
+
+                      // ------ 載入畫面後 ------------------
+
+                      override func viewDidLoad() {
+                          super.viewDidLoad()
+                          // Do any additional setup after loading the view.
+                      }
+
+                      // ------ 畫面出現 ------------------
+
+                      override func viewWillAppear(_ animated: Bool) {
+                          <#code#>
+                      }
+
+                      override func viewDidAppear(_ animated: Bool) {
+                          <#code#>
+                      }
+
+                      // ------ 畫面消失 ------------------
+
+                      override func viewWillDisappear(_ animated: Bool) {
+                          <#code#>
+                      }
+
+                      override func viewDidDisappear(_ animated: Bool) {
+                          <#code#>
+                      }
+
+                      // ------ 畫面傳輸 ------------------
+
+                      override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+                          <#code#>
+                      }
+
+                      // ------ 與畫面生命週期無關 ------------------
+
+                      override func updateViewConstraints() {
+                          <#code#>
+                      }
+
+                      override func viewWillLayoutSubviews() {
+                          <#code#>
+                      }
+
+                      override func viewDidLayoutSubviews() {
+                          <#code#>
+                      }
+
+                      override func viewSafeAreaInsetsDidChange() {
+                          <#code#>
+                      }
+
+
+                  }
