@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  KatesLocalPushNotofyApp
+//  KatesBackgroundRunner
 //
-//  Created by KatesAndroid on 2021/1/29.
+//  Created by KatesAndroid on 2021/1/29 PM 7:40
 //
 
 import UIKit
@@ -30,7 +30,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
+    
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    //進入前景
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // 即將啟動
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // 停止啟動
+    func applicationWillResignActive(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // 進入背景
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // 閒置過久，檢查記憶體與存儲空間，如不足，被迫移除。
+    func applicationWillTerminate(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // 記憶體不足提醒
+    func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // 時間相關
+    func applicationSignificantTimeChange(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    
+    // 資料相關
+    func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    func applicationProtectedDataWillBecomeUnavailable(_ application: UIApplication) {
+        <#code#>
+    }
+    
+    // Auth
+    func applicationShouldRequestHealthAuthorization(_ application: UIApplication) {
+        <#code#>
+    }
+    
+   
 
 }
 
