@@ -5,7 +5,7 @@ LifeCycle of iOS app
 一旦 app 下載進入手機設備中的磁碟內時，App 的生命週期就開始了，請詳 AppDelegate。
 而通常本地端的推播功能就是設計於此環節，能讓使用者在沒有網路的情況下，能接受 app 定時設計好的推送訊息。
 
-https://github.com/QueenieCplusplus/iOS_Back_15
+   https://github.com/QueenieCplusplus/iOS_Back_15
 
 * Open App
 當使用者啟動 app，進入畫面，則畫面的生命週期便是展開，請詳 ViewController。
