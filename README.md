@@ -1,6 +1,85 @@
 # iOS_Back_14
 LifeCycle of iOS app
 
+* Life Cycle
+
+         import UIKit
+
+      @main
+      class AppDelegate: UIResponder, UIApplicationDelegate {
+      
+      
+          // 應用程式初始化
+          func applicationDidFinishLaunching(_ application: UIApplication) {
+              <#code#>
+          }
+
+
+         // 應用程式初始化後
+          func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+              // Override point for customization after application launch.
+              return true
+          }
+
+
+
+          //即將啟動 Running phase
+          func applicationDidBecomeActive(_ application: UIApplication) {
+              <#code#>
+          }
+
+          //進入前景 (使用者使用中)
+          func applicationWillEnterForeground(_ application: UIApplication) {
+              <#code#>
+          }
+
+
+          // 使用者離開活動中
+          func applicationWillResignActive(_ application: UIApplication) {
+              <#code#>
+          }
+
+          // 進入背景
+          func applicationDidEnterBackground(_ application: UIApplication) {
+              <#code#>
+          }
+
+          // 閒置過久，檢查記憶體與存儲空間，如不足，被迫移除（釋放資源）。
+          func applicationWillTerminate(_ application: UIApplication) {
+              <#code#>
+          }
+          
+          ---------- 下方無關生命週期重要階段 ------------------------------------
+
+          // 記憶體不足提醒
+          func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
+              <#code#>
+          }
+
+          // 時間相關
+          func applicationSignificantTimeChange(_ application: UIApplication) {
+              <#code#>
+          }
+
+
+          // 資料相關
+          func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication) {
+              <#code#>
+          }
+
+          func applicationProtectedDataWillBecomeUnavailable(_ application: UIApplication) {
+              <#code#>
+          }
+
+          // Auth
+          func applicationShouldRequestHealthAuthorization(_ application: UIApplication) {
+              <#code#>
+          }
+
+
+
+      }
+
 * Download App
 一旦 app 下載進入手機設備中的磁碟內時，App 的生命週期就開始了，請詳 AppDelegate。
 而通常本地端的推播功能就是設計於此環節，能讓使用者在沒有網路的情況下，能接受 app 定時設計好的推送訊息。
