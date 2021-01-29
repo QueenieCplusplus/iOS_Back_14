@@ -8,7 +8,7 @@ LifeCycle of iOS app
    https://github.com/QueenieCplusplus/iOS_Back_15 (示範範例)
 
 * Open App
-當使用者啟動 app，進入畫面，則畫面的生命週期便是展開，請詳 ViewController。
+當使用者啟動 app，進入畫面即前景 ，則畫面的生命週期便是展開，請詳 ViewController。
 
 * Press Home button
 按下 Home 鍵，雖然前景畫面跑回了手機主頁，然而針對某些特殊設計的應用程式（開發者設定為可於背景執行）則地圖 app 、音樂 app、資料撈取功能的 app 均能於背景（使用者即便看不見應用程式畫面）亦能執行任務，方便使用者繼續更新地圖、聆聽音樂、下載資料。
